@@ -1,0 +1,10 @@
+version: "3"
+services:
+  homepageapp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    volumes:
+      - ./:/usr/local/apache2/htdocs/
