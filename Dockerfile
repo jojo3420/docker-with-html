@@ -14,5 +14,5 @@ COPY ./ ./
 # Apache Server
 FROM httpd:2.4
 
-COPY --from=builder /usr/src/app/ /usr/local/apache2/htdocs/
+COPY --from=builder /usr/src/app /usr/local/apache2/htdocs
 
